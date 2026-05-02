@@ -1,0 +1,84 @@
+# FUNÇÃO PRINT
+# O comando "PRINT" é uma função usada para "imprimir" alguma coisa na tela.
+print("Olá")
+
+# O python ele é de tipagem dinâmica. Por este motivo não "precisamos" indicar o tipo de algumas variáveis, por exemplo:
+print(7 + 7)
+print("Olá" + " " + "mundo!")
+
+# Observe que para textos a linguagem concatena, já para números, irá somar. Mas observe abaixo:
+print("7" + "7")
+print(7 + 7)
+
+# Com o exemplo acima, observamos que: quando se é STRING (conteúdos entre aspas) é concatenado. Para números (elementos sem aspas), o valor é somado.
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------- #
+
+# FUNÇÃO INPUT
+# O comando "INPUT" é uma função para capturar dados de entrada, informados pelo usuário.
+input('Digite o seu nome: ')
+
+# Podemos (e devemos) "misturar" funções para obtermos melhores métodos e alcançar uma codificação complexa, veja o exemplo abaixo:
+print("Olá, " + input('Digite seu nome: ') + "!")
+
+# No exemplo acima, observe que: primeiro será executado a parte do input, para que depois de inserida essa resposta, ser fornecida no print.
+
+
+# EXERCÍCIO 1
+# Crie um programa que o usuário digita o seu nome e retorna o número de caracteres.
+
+nome = input('Digite o seu nome: ')
+
+print(f'O nome {nome} tem {len(nome)} caracteres!')
+
+# Resolução utilizada
+print(len(input('Digite o seu nome: ')))
+
+
+# EXERCÍCIO 2
+# Crie um programa onde o usuário digite dois valores e apareça a soma entre eles.
+
+print(int(input('Digite um número: ')) + int(input('Digite outro número: ')))
+
+# Resolução por variáveis
+num1 = int(input('Digite um número: '))
+num2 = int(input('Digite outro número: '))
+
+soma = num1 + num2
+
+print(f'A soma de {num1} + {num2} será igual a {soma}.')
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------- #
+
+# VARIÁVEIS
+# Variável é um espaço de memória dentro do código, que separamos para utilizar de modo especial. Cada variável será de um tipo a depender da nossa utilização.
+
+num1 = 3
+texto = 'Amar'
+
+# OBSERVAÇÕES
+# Por padrão os nomes das variáveis serão escritas com letras minúsculas;
+# Quando o nome da variável for totalmente em maiúsculo, essa variável será uma CONSTANTE. Ou seja, o valor tende a "NÃO MUDAR" durante o código;
+# Quando o nome da variável vier antecedido por um "_" (underline), isso significa que ela será "SECRETA".
+
+
+# TIPOS DE VARIÁVEIS
+# Existe 4 tipos primitivos de variáveis: INT, FLOAT, STRING e BOOL.
+
+numero = 3                # int
+numero_decimal = 5.965    # float
+texto = "Olá mundo!"      # string
+verdadeiro = True         # bool
+
+
+# FUNÇÃO TYPE
+# A função "TYPE" serve para mostrar qual é a classe da variável.
+nome = 'Renato'
+numero = 4
+num1 = 3.58
+logi = False
+
+print(type(nome))
+print(type(numero))
+print(type(num1))
+print(type(logi))
