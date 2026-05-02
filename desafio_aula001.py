@@ -15,7 +15,9 @@ nome = input('Digite o seu nome: ')
 salario = float(input('Digite o seu salário: '))
 bonus = float(input('Digite o seu bônus: '))
 
-valor_kpi = 1000 + (salario * bonus)
+BONUS_KPI = 1000   # Colocamos o valor do bônus dentro de uma constante, para que o código fique mais elegível e caso venha a ser alterado futuramente.
+
+valor_kpi = BONUS_KPI + (salario * bonus)
 
 print(f'O cálculo do KPI será:  1000 + ({salario} * {bonus})')
 
